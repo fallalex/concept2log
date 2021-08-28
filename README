@@ -1,0 +1,26 @@
+
+## Log API
+They have a dev server you can use to hit the api before getting an api key.
+https://log-dev.concept2.com
+made an account with same password but alex@labfall.com
+
+https://log.concept2.com/developers/documentation
+
+## BLE PM5 Connection
+This repo connects well from my laptop to the erg via bluetooth
+https://github.com/ergarcade/pm5-detail
+
+This repo has the most momentum
+https://github.com/tijmenvangulik/ErgometerJS
+
+## Logbook parser
+https://git.gutmet.org/pm5conv/
+https://gitlab.com/rmoe/c2log
+
+Here is an example of getting the total meters rowed
+    ./pm5conv /Volumes/ROW/Concept2/Logbook | python3 -c "import sys,json; print(sum([x['TotalDistance'] for x in json.loads(sys.stdin.read())]))"
+
+
+## Goal
+I want to get the workout uploaded and saved with minimal effort after the workout
+
